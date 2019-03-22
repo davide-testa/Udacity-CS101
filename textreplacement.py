@@ -30,7 +30,7 @@ line = "I will now go to sleep and be AFK until lunch time tomorrow."
 # YOUR CODE BELOW. DO NOT DELETE THIS LINE
 ###
 
-replaced = line[:line.find(marker)]+replacement+line[line.find(marker[-1])+1:]
+replaced = line[:line.find(marker)] + replacement + line[line.find(marker[-1]) + 1:]
 
 print replaced
 
