@@ -9,10 +9,9 @@
 # instead of print countdown(3).
 
 def countdown(i):
-    print i
-    while i > 1:
-        i = i - 1
+    while i > 0:
         print i
+        i = i - 1
     print 'Blastoff!'
 
 countdown(3)
