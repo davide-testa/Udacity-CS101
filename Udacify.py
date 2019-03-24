@@ -8,8 +8,7 @@
 # the output should be the string 'Udacians'
 
 def udacify(s):
-    s = 'U' + s
-    return s
+    return 'U' + s
 
 # Remove the hash, #, from infront of print to test your code.
 
