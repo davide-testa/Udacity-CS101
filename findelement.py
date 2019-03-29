@@ -4,7 +4,7 @@ def find_element(p,t):
         if p[i] == t:
             return i
         i = i + 1
-    return
+    return -1
 
 def find_element(p,t):
     i = 0
