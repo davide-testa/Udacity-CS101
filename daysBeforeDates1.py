@@ -40,6 +40,12 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
     
     return daysBetweenDates
 
+def daysBetweenDates(year1, month1, day1, year2, month2, day2):
+    days = 0  
+    year1, month1, day1 = nextDay(year1, month1, day1)
+    days += 1
+    return days
+
 def test():
     test_cases = [((2012,9,30,2012,10,30),30), 
                   ((2012,1,1,2013,1,1),365),
