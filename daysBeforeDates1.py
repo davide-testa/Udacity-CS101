@@ -7,6 +7,11 @@
 # 
 
 def isLeapYear(year):
+# da Wikipedia
+# if (year is not divisible by 4) then (it is a common year)
+# else if (year is not divisible by 100) then (it is a leap year)
+# else if (year is not divisible by 400) then (it is a common year)
+# else (it is a leap year)
     if year % 400 == 0:
         return True
     if year % 100 == 0:
