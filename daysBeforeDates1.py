@@ -46,18 +46,18 @@ def dateIsBefore(year1, month1, day1, year2, month2, day2):
             return day1 < day2
     return False
         
-def daysBetweenDates(year1, month1, day1, year2, month2, day2):
-    """Returns the number of days between year1/month1/day1
-       and year2/month2/day2. Assumes inputs are valid dates
-       in Gregorian calendar, and the first date is not after
-       the second."""
-       
-    daysInYear = 365
-    totalDays1 = (year1 * daysInYear) + (month1 * daysInMonth) + day1
-    totalDays2 = (year2 * daysInYear) + (month2 * daysInMonth) + day2
-    daysBetweenDates = totalDays2 - totalDays1
-    
-    return daysBetweenDates
+# def daysBetweenDates(year1, month1, day1, year2, month2, day2):
+#   """Returns the number of days between year1/month1/day1
+#       and year2/month2/day2. Assumes inputs are valid dates
+#       in Gregorian calendar, and the first date is not after
+#       the second."""
+#       
+#    daysInYear = 365
+#    totalDays1 = (year1 * daysInYear) + (month1 * daysInMonth) + day1
+#    totalDays2 = (year2 * daysInYear) + (month2 * daysInMonth) + day2
+#    daysBetweenDates = totalDays2 - totalDays1
+#    
+#    return daysBetweenDates
 
 def daysBetweenDates(year1, month1, day1, year2, month2, day2):
     days = 0  
