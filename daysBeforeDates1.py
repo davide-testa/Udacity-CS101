@@ -6,6 +6,26 @@
 # (hence a year is 360 days, instead of 365).
 # 
 
+def isLeapYear(year):
+    if year % 400 == 0:
+        return True
+    if year % 100 == 0:
+        return False
+    if year % 4 == 0:
+        return True
+    return False
+
+def daysInMonth(year, month):
+    if month == 1 or month2 == 3 or month == 5 or month == 7 \
+        or month == 8 or month == 10 or month == 12:
+        return 31
+    else:
+        if month == 2:
+            if isLeapYear(year):
+                return 29
+            return 28
+    return 30
+
 def nextDay(year, month, day):
     """Simple version: assume every month has 30 days"""
     if day < 30:
@@ -16,7 +36,7 @@ def nextDay(year, month, day):
         else:
             return year, month + 1, 1
         
-def dateIsBefore(year1, month1, day1, year2, month2, day2)
+def dateIsBefore(year1, month1, day1, year2, month2, day2):
     if year1 < year2:
         return True
     if year1 == year 2:
@@ -33,7 +53,6 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
        the second."""
        
     daysInYear = 365
-    daysInMonth = 30
     totalDays1 = (year1 * daysInYear) + (month1 * daysInMonth) + day1
     totalDays2 = (year2 * daysInYear) + (month2 * daysInMonth) + day2
     daysBetweenDates = totalDays2 - totalDays1
@@ -48,7 +67,7 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
 
 def test():
     test_cases = [((2012,9,30,2012,10,30),30), 
-                  ((2012,1,1,2013,1,1),365),
+                  ((2012,1,1,2013,1,1),366),
                   ((2012,9,1,2012,9,4),3)]
     
     for (args, answer) in test_cases:
